@@ -30,7 +30,7 @@ int event(int i, void(*cb_func)())
 
 int event_reg(int id,int flag,void(*fp)())
 { 
-  struct module* temp = (struct module*)malloc(sizeof(struct module*));
+  struct module* temp = (struct module*)malloc(sizeof(struct module));
   struct module* p;
   temp->module_id = id;
   temp->event_bitmap = flag;
